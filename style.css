@@ -6,10 +6,21 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fef2f8;
+    background: radial-gradient(circle at 10% 10%, #fff6fb 0%, #fef2f8 25%, #fde9f3 50%, #f7e6ef 100%), linear-gradient(135deg, #ffeef6 0%, #fff7fb 100%);
     color: #2d2d2d;
-    padding: 20px;
-    transition: background-color 0.3s ease;
+    padding: 30px;
+    transition: background 0.3s ease;
+    min-height: 100vh;
+}
+
+/* Centering container to improve page layout */
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 28px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 header {
@@ -41,11 +52,13 @@ h1 {
 }
 
 .content img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     border-radius: 15px;
     border: 5px solid #db4584;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease;
 }
 
